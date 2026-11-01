@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Alex Morgan, a creative web development student." />
+  <title>Imam Hossain — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { ink: '#17221f', muted: '#64716c', paper: '#f6f7f2', lime: '#c7f36b', forest: '#234c3b' },
+        fontFamily: { sans: ['DM Sans', 'sans-serif'], display: ['Space Grotesk', 'sans-serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+  <header class="fixed top-0 inset-x-0 z-50 nav-shell">
+    <nav class="max-w-6xl mx-auto px-5 md:px-8 h-[76px] flex items-center justify-between" aria-label="Main navigation">
+      <a href="#home" class="brand font-display font-bold text-xl tracking-tight">Imam<span class="text-forest">.</span></a>
+      <button id="menu-toggle" class="md:hidden p-2 rounded-lg border border-black/10" aria-label="Open navigation" aria-expanded="false">
+        <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div id="nav-links" class="nav-links hidden md:flex items-center gap-8 text-sm font-semibold">
+        <a href="#home" class="nav-link active">Home</a><a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a><a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section scroll-mt-24">
+      <div class="max-w-6xl mx-auto px-5 md:px-8 pt-36 pb-20 md:pt-44 md:pb-28 grid md:grid-cols-[1.15fr_.85fr] gap-12 items-center">
+        <div class="relative z-10">
+          <div class="eyebrow"><span class="pulse-dot"></span> AVAILABLE FOR LEARNING & COLLABORATION</div>
+          <p class="text-forest font-semibold mt-8 mb-3">Hello, I'm</p>
+          <h1 class="font-display text-[clamp(3.5rem,8vw,6.8rem)] leading-[.94] tracking-[-.07em] font-bold">Imam<br><span class="outline-text">Hossain.</span></h1>
+          <h2 class="text-xl md:text-2xl font-semibold mt-7">Aspiring Front-end Developer</h2>
+          <p class="text-muted text-base md:text-lg leading-8 max-w-xl mt-4">I turn ideas into thoughtful digital experiences. I'm a student exploring the web, building useful things, and learning something new with every project.</p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <a href="#projects" class="btn-primary">Explore my work <span>↗</span></a>
+            <a href="#contact" class="btn-secondary">Get in touch</a>
+          </div>
+          <div class="flex items-center gap-5 mt-12 text-sm text-muted">
+            <span class="flex items-center gap-2"><span class="tiny-line"></span> Based in Dhaka, Bangladesh</span>
+            <span class="hidden sm:inline">·</span><span>Open to opportunities</span>
+          </div>
+        </div>
+        <div class="hero-visual relative mx-auto w-full max-w-[440px]">
+          <div class="photo-frame">
+            <img src="asset/myPhoto.jpg" alt="Portrait placeholder" class="profile-photo">
+          </div>
+          <div class="floating-note note-top"><span class="note-icon">✳</span><span><b>Curious mind</b><small>Always learning</small></span></div>
+          <div class="floating-note note-bottom"><span class="note-icon dark">⌘</span><span><b>Building for web</b><small>One project at a time</small></span></div>
+          <div class="decor decor-one"></div><div class="decor decor-two"></div>
+        </div>
+      </div>
+      <div class="hero-bottom max-w-6xl mx-auto px-5 md:px-8"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 / 05</span></div>
+    </section>
+
+    <section id="about" class="section-pad scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 md:px-8">
+        <div class="section-kicker">01 — A LITTLE ABOUT ME</div>
+        <div class="grid md:grid-cols-[.8fr_1.2fr] gap-12 md:gap-24 mt-8">
+          <h2 class="section-title">Curiosity<br>makes things<br><span class="text-forest">happen.</span></h2>
+          <div class="pt-2">
+            <p class="text-lg md:text-xl leading-9 text-ink/80">I'm Imam, a dedicated student with a growing passion for design and front-end development. I enjoy taking a blank page and shaping it into something clear, useful, and enjoyable to use.</p>
+            <p class="text-muted leading-8 mt-5">Right now, I'm strengthening my foundations in HTML, CSS, and Tailwind CSS while exploring JavaScript and modern web practices. My goal is to become a thoughtful developer who creates accessible, responsive experiences and keeps improving through real-world projects.</p>
+            <div class="grid grid-cols-2 gap-5 mt-9 border-t border-black/10 pt-6">
+              <div><div class="stat-number">03<span>+</span></div><p class="text-sm text-muted mt-1">Practice projects</p></div>
+              <div><div class="stat-number">∞</div><p class="text-sm text-muted mt-1">Things to learn</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-pad bg-[#e9eee5] scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 md:px-8">
+        <div class="section-kicker">02 — WHAT I WORK WITH</div>
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mt-7">
+          <h2 class="section-title">My toolkit<span class="text-forest">.</span></h2>
+          <p class="text-muted leading-7 max-w-sm">A growing set of tools I use to design, build, and bring ideas to life on the web.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 mt-12">
+          <article class="skill-card"><span class="skill-symbol">&lt;/&gt;</span><div><h3>HTML5</h3><p>Semantic structure</p></div><span class="skill-index">01</span></article>
+          <article class="skill-card"><span class="skill-symbol">✳</span><div><h3>CSS3</h3><p>Layouts & styling</p></div><span class="skill-index">02</span></article>
+          <article class="skill-card"><span class="skill-symbol">✦</span><div><h3>Tailwind CSS</h3><p>Utility-first design</p></div><span class="skill-index">03</span></article>
+          <article class="skill-card"><span class="skill-symbol">JS</span><div><h3>JavaScript</h3><p>Learning interactivity</p></div><span class="skill-index">04</span></article>
+          <article class="skill-card"><span class="skill-symbol">⌘</span><div><h3>Git</h3><p>Version control</p></div><span class="skill-index">05</span></article>
+          <article class="skill-card"><span class="skill-symbol">◉</span><div><h3>GitHub</h3><p>Code & collaboration</p></div><span class="skill-index">06</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-pad scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 md:px-8">
+        <div class="section-kicker">03 — SELECTED WORK</div>
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mt-7">
+          <h2 class="section-title">Things I've<br><span class="text-forest">made.</span></h2>
+          <p class="text-muted leading-7 max-w-sm">A few concepts and practice builds. Each one is a chance to learn, experiment, and get better.</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6 mt-12">
+          <article class="project-card project-wide">
+            <div class="project-image image-one"><div class="browser-bar"><i></i><i></i><i></i><span>freshplate.app</span></div><div class="mock-content"><small>GOOD FOOD, GOOD MOOD</small><strong>Eat well.<br>Feel well.</strong><div class="mock-pill">Explore recipes ↗</div></div></div>
+            <div class="project-info"><div><span class="project-type">01 / WEB DESIGN</span><h3>FreshPlate — Recipe Finder</h3><p>A clean recipe landing page concept focused on food discovery and simple navigation.</p></div><div class="project-links"><a href="#contact">Live demo ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-image image-two"><div class="task-window"><div class="task-head">Monday, your way <span>✳</span></div><div class="task-row"><b>✓</b> Plan the week</div><div class="task-row"><b>✓</b> Study HTML & CSS</div><div class="task-row"><b class="empty">○</b> Build something new</div><div class="task-progress"><span></span></div><small>2 OF 3 TASKS COMPLETE</small></div></div>
+            <div class="project-info"><div><span class="project-type">02 / PRODUCTIVITY</span><h3>Daymark — Task Dashboard</h3><p>A friendly dashboard concept for organizing daily tasks and staying focused.</p></div><div class="project-links"><a href="#contact">Live demo ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-image image-three"><div class="shop-card"><div class="shop-label">OBJECTS FOR EVERY DAY</div><div class="shop-art">◒</div><strong>Less, but<br>better.</strong><span>Discover the collection →</span></div></div>
+            <div class="project-info"><div><span class="project-type">03 / E-COMMERCE</span><h3>Forma — Product Landing Page</h3><p>A minimal storefront concept that highlights product details with a calm visual style.</p></div><div class="project-links"><a href="#contact">Live demo ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">Source code ↗</a></div></div>
+          </article>
+        </div>
+        <p class="text-xs text-muted mt-5">Note: These are sample project previews. Replace them with screenshots and links to your own completed projects.</p>
+      </div>
+    </section>
+
+    <section id="education" class="section-pad bg-[#e9eee5] scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 md:px-8">
+        <div class="section-kicker">04 — THE LEARNING PATH</div>
+        <h2 class="section-title mt-7">Education<span class="text-forest">.</span></h2>
+        <div class="timeline mt-12">
+          <article class="timeline-item"><div class="timeline-date">2024 — PRESENT</div><div><h3>Web Development Learner</h3><p class="text-forest font-semibold mt-1">Self-directed learning & coursework</p><p class="text-muted leading-7 mt-3 max-w-2xl">Building a strong foundation in responsive web design, HTML, CSS, Tailwind CSS, and JavaScript through guided lessons and hands-on practice.</p></div></article>
+          <article class="timeline-item"><div class="timeline-date">YOUR YEARS</div><div><h3>Your Degree / Current Study</h3><p class="text-forest font-semibold mt-1">Your Institution Name · Your City</p><p class="text-muted leading-7 mt-3 max-w-2xl">Add your school, college, university, degree, department, or current course here. Include relevant achievements if you have them.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-pad scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 md:px-8">
+        <div class="section-kicker text-lime">05 — LET'S CONNECT</div>
+        <div class="grid md:grid-cols-[1fr_1fr] gap-14 mt-8">
+          <div><h2 class="font-display text-5xl md:text-7xl leading-[1.02] tracking-[-.06em] font-bold text-white">Have a good<br>idea? <span class="text-lime">Let's talk.</span></h2>
+            <p class="text-white/65 leading-8 mt-6 max-w-md">I'm always happy to connect, hear about interesting projects, or learn from other people in the community.</p>
+            <a class="email-link" href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
+            <div class="flex gap-5 mt-8 text-sm text-white/70"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Sam Taylor" required>
+            <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="sam@example.com" required>
+            <label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about it..." required></textarea>
+            <button type="submit" class="btn-lime">Send message <span>↗</span></button>
+            <p id="form-status" class="text-xs text-white/60 mt-3" aria-live="polite">Demo form: connect a backend or form service to receive messages.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#14231d] text-white/60">
+    <div class="max-w-6xl mx-auto px-5 md:px-8 py-7 flex flex-col sm:flex-row gap-4 justify-between items-center text-xs">
+      <a href="#home" class="font-display font-bold text-white text-lg">am<span class="text-lime">.</span></a>
+      <p>Designed & built with curiosity. © <span id="year"></span> Alex Morgan.</p>
+      <div class="flex gap-5"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a><a href="#home">Back to top ↑</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
